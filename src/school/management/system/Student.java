@@ -1,21 +1,18 @@
 package school.management.system;
 
-public class Student {
+public class Student extends Person{
 
-    private int id;
-    private String name;
     private int year;
+    private String school;
     private int feesPaid;
     private int feesTotal;
-    private String school;
 
     public Student(int id, String name, int year, String school) {
-        this.feesPaid = 0;
-        this.feesTotal = 30000;
-        this.id = id;
-        this.name = name;
+        super()
         this.year = year;
         this.school = school;
+        this.feesPaid = 0;
+        this.feesTotal = 30000;
     }
 
     public void setYear(int year) {
@@ -27,14 +24,6 @@ public class Student {
             feesPaid = feesPaid + fees;
             School.updateTotalMoneyEarned(feesPaid);
         }
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public int getYear() {

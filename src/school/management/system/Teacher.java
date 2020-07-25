@@ -1,27 +1,17 @@
 package school.management.system;
 
-public class Teacher {
+public class Teacher extends Person{
 
-    private int id;
-    private String name;
+
     private int salary;
     private int salaryEarned;
     private String placeOfWork;
 
     public Teacher(int id, String name, int salary, String placeOfWork) {
-        this.id = id;
-        this.name = name;
+        super()
         this.salary = salary;
         this.salaryEarned = 0;
         this.placeOfWork = placeOfWork;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public int getSalary() {
