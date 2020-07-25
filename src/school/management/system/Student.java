@@ -1,6 +1,10 @@
 package school.management.system;
 
+<<<<<<< Updated upstream
 import java.time.Year;
+=======
+public class Student extends Person {
+>>>>>>> Stashed changes
 
 public class Student extends People {
 

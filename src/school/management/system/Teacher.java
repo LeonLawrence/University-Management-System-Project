@@ -1,6 +1,10 @@
 package school.management.system;
 
+<<<<<<< Updated upstream
 public class Teacher extends People{
+=======
+public class Teacher extends Person {
+>>>>>>> Stashed changes
 
     protected String workStatus;
 
