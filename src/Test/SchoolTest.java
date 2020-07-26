@@ -1,7 +1,10 @@
-package school.management.system;
+package Test;
 
 import org.junit.Before;
 import org.junit.Test;
+import school.management.system.School;
+import school.management.system.Student;
+import school.management.system.Teacher;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,6 +1,8 @@
-package school.management.system;
+package Test;
 
 import org.junit.Test;
+import school.management.system.Administrator;
+import school.management.system.Course;
 
 import java.util.ArrayList;
 import java.util.List;
