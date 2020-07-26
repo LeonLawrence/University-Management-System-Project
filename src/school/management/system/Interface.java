@@ -8,13 +8,17 @@ public class Interface {
 
 public void systemLog() {
 
-    Teacher teacher1 = new Teacher(1, "Binh", 900, " University of Greenwich ");
+    Teacher teacher1 = new Teacher(0, "Binh", 900, " University of Greenwich ");
 
 
     List<Teacher> teacherList = new ArrayList<>();
     teacherList.add(teacher1);
 
-    Student student1 = new Student(1, "Jim", 1, " University of Greenwich ");
+    Student student1 = new Student(0, "Tony", 1, " University of Greenwich ");
+    Student student2 = new Student(0, "Binh", 2, " University of Greenwich2 ");
+    Student student3 = new Student(0, "Kim", 2, " University of Greenwich2 ");
+    Student student4 = new Student(0, "Leon", 2, " University of Greenwich2 ");
+    Student student5 = new Student(0, "Bob", 2, " University of Greenwich2 ");
 
 
     List<Student> studentList = new ArrayList<>();
@@ -76,5 +80,12 @@ public void systemLog() {
     System.out.println(course2.getCourseName());
     System.out.println(course3.getCourseName());
     System.out.println(course4.getCourseName());
+
+
+    System.out.println(student1);
+    System.out.println(student2);
+    System.out.println(student3);
+    System.out.println(student4);
+    System.out.println(student5);
 }
 }

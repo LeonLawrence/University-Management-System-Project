@@ -7,7 +7,7 @@ public class Student extends Person{
     private int feesPaid;
     private int feesTotal;
 
-    public Student(int id, String name, int year, String school) {
+    public Student(int id,String name, int year, String school) {
         super(id, name);
         this.year = year;
         this.school = school;
@@ -52,6 +52,6 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return "STUDENT NAME: " + getName() + "          TOTAL AMOUNT PAID: £" + feesPaid;
+        return "ID: " + getId() + "         " + getName() + "          TOTAL AMOUNT PAID: £" + feesPaid;
     }
 }
