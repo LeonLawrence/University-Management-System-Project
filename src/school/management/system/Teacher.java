@@ -8,7 +8,7 @@ public class Teacher extends Person{
     private String placeOfWork;
 
     public Teacher(int id, String name, int salary, String placeOfWork) {
-        super()
+        super(id, name);
         this.salary = salary;
         this.salaryEarned = 0;
         this.placeOfWork = placeOfWork;
@@ -37,6 +37,6 @@ public class Teacher extends Person{
 
     @Override
     public String toString() {
-        return "TEACHER NAME: " + name + "          TOTAL SALARY EARNED £" + salaryEarned;
+        return "TEACHER NAME: " + getName() + "          TOTAL SALARY EARNED £" + salaryEarned;
     }
 }

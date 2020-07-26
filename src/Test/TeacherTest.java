@@ -1,6 +1,7 @@
-package school.management.system;
+package Test;
 
 import org.junit.Test;
+import school.management.system.Teacher;
 
 import static org.junit.Assert.assertEquals;
 
