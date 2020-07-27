@@ -1,13 +1,12 @@
 package school.management.system;
 
 public class Person {
-    private static int count = 0;
     private int id;
     private String name;
 
-    public Person(int id, String name) {
-        setId(++count);
-        setName(name);
+    public Person(String name) {
+        this.id = IdGenerator.getId();
+        this.name = name;
     }
 
     public void setId(int id) {

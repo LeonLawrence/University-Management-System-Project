@@ -1,14 +1,14 @@
 package school.management.system;
 
-public class Teacher extends Person{
+public class Teacher extends Person {
 
 
     private int salary;
     private int salaryEarned;
     private String placeOfWork;
 
-    public Teacher(int id, String name, int salary, String placeOfWork) {
-        super(id, name);
+    public Teacher(String name, int salary, String placeOfWork) {
+        super(name);
         this.salary = salary;
         this.salaryEarned = 0;
         this.placeOfWork = placeOfWork;

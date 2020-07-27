@@ -1,4 +1,5 @@
 package Test;
+
 import org.junit.Test;
 import school.management.system.Student;
 
@@ -6,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class StudentTest {
 
-    private Student me = new Student(1, "Binh", 2020, "some-school");
+    private Student me = new Student("Binh", 2020, "some-school");
 
     @Test
     public void canGetStudentId() {
@@ -46,7 +47,7 @@ public class StudentTest {
 
     @Test
     public void payNegativeFee() {
-        Student me = new Student(1, "Binh", 2020, "some-school");
+        Student me = new Student("Binh", 2020, "some-school");
         me.payFees(-10_000);
         assertEquals(30_000, me.getRemainingFees());
     }

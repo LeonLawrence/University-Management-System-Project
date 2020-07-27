@@ -6,86 +6,86 @@ import java.util.List;
 public class Interface {
 
 
-public void systemLog() {
+    public void systemLog() {
 
-    Teacher teacher1 = new Teacher(0, "Binh", 900, " University of Greenwich ");
-
-
-    List<Teacher> teacherList = new ArrayList<>();
-    teacherList.add(teacher1);
-
-    Student student1 = new Student(0, "Tony", 1, " University of Greenwich ");
-    Student student2 = new Student(0, "Binh", 2, " University of Greenwich2 ");
-    Student student3 = new Student(0, "Kim", 2, " University of Greenwich2 ");
-    Student student4 = new Student(0, "Leon", 2, " University of Greenwich2 ");
-    Student student5 = new Student(0, "Bob", 2, " University of Greenwich2 ");
+        Teacher teacher1 = new Teacher("Binh", 900, " University of Greenwich ");
 
 
-    List<Student> studentList = new ArrayList<>();
-    studentList.add(student1);
+        List<Teacher> teacherList = new ArrayList<>();
+        teacherList.add(teacher1);
 
-    Course course1 = new Course("Business");
-    Course course2 = new Course("Computing");
-    Course course3 = new Course("Science");
-    Course course4 = new Course("Math");
+        Student student1 = new Student("Tony", 1, " University of Greenwich ");
+        Student student2 = new Student("Binh", 2, " University of Greenwich2 ");
+        Student student3 = new Student("Kim", 2, " University of Greenwich2 ");
+        Student student4 = new Student("Leon", 2, " University of Greenwich2 ");
+        Student student5 = new Student("Bob", 2, " University of Greenwich2 ");
 
-    List<Course> courseList = new ArrayList<>();
-    courseList.add(course1);
-    courseList.add(course2);
-    courseList.add(course3);
-    courseList.add(course4);
-    School greenwich = new School();
-    Administrator greenwichCourse = new Administrator(courseList);
 
-    Teacher megan = new Teacher(4, "Megan", 700, " University of Greenwich ");
-    greenwich.addTeacher(megan);
+        List<Student> studentList = new ArrayList<>();
+        studentList.add(student1);
 
-    Student bob = new Student(4, "Bob", 3, " University of Greenwich ");
-    greenwich.addStudent(bob);
-    System.out.println();
+        Course course1 = new Course("Business");
+        Course course2 = new Course("Computing");
+        Course course3 = new Course("Science");
+        Course course4 = new Course("Math");
 
-    System.out.println(megan);
-    System.out.println(bob);
+        List<Course> courseList = new ArrayList<>();
+        courseList.add(course1);
+        courseList.add(course2);
+        courseList.add(course3);
+        courseList.add(course4);
+        School greenwich = new School();
+        Administrator greenwichCourse = new Administrator(courseList);
 
-    System.out.println();
+        Teacher megan = new Teacher("Megan", 700, " University of Greenwich ");
+        greenwich.addTeacher(megan);
 
-    student1.payFees(500);
-    student1.payFees(100);
+        Student bob = new Student("Bob", 3, " University of Greenwich ");
+        greenwich.addStudent(bob);
+        System.out.println();
 
-    System.out.println("Institution Account Balance: £" + greenwich.getTotalMoneyEarned());
+        System.out.println(megan);
+        System.out.println(bob);
 
-    System.out.println();
+        System.out.println();
 
-    System.out.println("--------------------LOG--------------------");
-    megan.receiveSalary(megan.getSalary());
-    System.out.println("Institution has paid " + megan.getName() + " and now has £" + greenwich.getTotalMoneyEarned());
+        student1.payFees(500);
+        student1.payFees(100);
+
+        System.out.println("Institution Account Balance: £" + greenwich.getTotalMoneyEarned());
+
+        System.out.println();
+
+        System.out.println("--------------------LOG--------------------");
+        megan.receiveSalary(megan.getSalary());
+        System.out.println("Institution has paid " + megan.getName() + " and now has £" + greenwich.getTotalMoneyEarned());
 
 //        teacher2.receiveSalary(teacher2.getSalary());
 //        System.out.println("Institution has paid " + teacher2.getName() + " and now has £" + greenwich.getTotalMoneyEarned());
 
-    System.out.println();
+        System.out.println();
 
-    System.out.println("--------------------UPDATE--------------------");
-    System.out.println(megan + " for teaching the subject " + course1.getCourseName());
+        System.out.println("--------------------UPDATE--------------------");
+        System.out.println(megan + " for teaching the subject " + course1.getCourseName());
 //        System.out.println(bob + " for his " + course1.getCourseName() + " course.");
 
-    System.out.println();
+        System.out.println();
 
-    System.out.println("Institution New Account Balance: £" + greenwich.getTotalMoneyEarned());
+        System.out.println("Institution New Account Balance: £" + greenwich.getTotalMoneyEarned());
 
-    System.out.println();
+        System.out.println();
 
-    System.out.println("--------------------COURSES--------------------");
-    System.out.println(course1.getCourseName());
-    System.out.println(course2.getCourseName());
-    System.out.println(course3.getCourseName());
-    System.out.println(course4.getCourseName());
+        System.out.println("--------------------COURSES--------------------");
+        System.out.println(course1.getCourseName());
+        System.out.println(course2.getCourseName());
+        System.out.println(course3.getCourseName());
+        System.out.println(course4.getCourseName());
 
 
-    System.out.println(student1);
-    System.out.println(student2);
-    System.out.println(student3);
-    System.out.println(student4);
-    System.out.println(student5);
-}
+        System.out.println(student1);
+        System.out.println(student2);
+        System.out.println(student3);
+        System.out.println(student4);
+        System.out.println(student5);
+    }
 }
