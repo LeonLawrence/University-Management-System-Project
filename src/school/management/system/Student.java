@@ -52,6 +52,9 @@ public class Student extends Person {
 
     @Override
     public String toString() {
-        return "ID: " + getId() + "         " + getName() + "          TOTAL AMOUNT PAID: £" + feesPaid;
+        return "ID: " + getId() + "     name: " +
+                getName() + "     Age: " + getYear() +
+                "     School Name: " + getSchool() +
+                "          TOTAL AMOUNT PAID: £" + feesPaid;
     }
 }

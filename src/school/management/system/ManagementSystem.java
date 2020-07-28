@@ -7,13 +7,17 @@ public class ManagementSystem {
 
     List<Student> students = new ArrayList<>();
 
-    public void addStudent(String name, int year, String school) {
+    public Student addStudent(String name, int year, String school) {
+
         Student s = new Student(name, year, school);
         students.add(s);
-        System.out.println(s);
+        return s;
     }
 
-    public boolean getStudent() {
-        return true;
+    public int currentStudentSize() {
+        return students.size();
     }
+
+
 }
+
