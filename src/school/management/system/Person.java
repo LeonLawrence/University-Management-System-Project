@@ -4,14 +4,15 @@ public class Person {
     private int id;
     private String name;
 
-    public Person(int id, String name) {
-        setId(id);
-        setName(name);
+    public Person(String name) {
+        this.id = IdGenerator.getId();
+        this.name = name;
     }
 
     public void setId(int id) {
         this.id = id;
     }
+
 
     public int getId() {
         return id;
@@ -24,4 +25,7 @@ public class Person {
     public void setName(String name) {
         this.name = name;
     }
+
 }
+
+

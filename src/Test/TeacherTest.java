@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class TeacherTest {
 
-    private Teacher me = new Teacher(1, "Binh", 0, "London University");
+    private Teacher me = new Teacher("Binh", 0, "London University");
 
     @Test
     public void canGetId() {
@@ -52,7 +52,7 @@ public class TeacherTest {
     }
 
     @Test
-            public void canReceiveSalary() {
+    public void canReceiveSalary() {
         me.receiveSalary(0);
         assertEquals(0, me.getSalary());
         me.setSalary(10_000);

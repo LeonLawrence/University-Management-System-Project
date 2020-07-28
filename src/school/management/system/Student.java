@@ -1,14 +1,14 @@
 package school.management.system;
 
-public class Student extends Person{
+public class Student extends Person {
 
     private int year;
     private String school;
     private int feesPaid;
     private int feesTotal;
 
-    public Student(int id, String name, int year, String school) {
-        super(id, name);
+    public Student(String name, int year, String school) {
+        super(name);
         this.year = year;
         this.school = school;
         this.feesPaid = 0;
@@ -52,6 +52,9 @@ public class Student extends Person{
 
     @Override
     public String toString() {
-        return "STUDENT NAME: " + getName() + "          TOTAL AMOUNT PAID: £" + feesPaid;
+        return "ID: " + getId() + "     name: " +
+                getName() + "     Age: " + getYear() +
+                "     School Name: " + getSchool() +
+                "          TOTAL AMOUNT PAID: £" + feesPaid;
     }
 }
