@@ -5,8 +5,8 @@ import java.util.List;
 public class Course {
     private String courseName;
 
-    public Course(String CourseName) {
-        this.courseName = CourseName;
+    public Course(String courseName) {
+        this.courseName = courseName;
     }
 
     public String getCourseName() {
@@ -15,6 +15,10 @@ public class Course {
 
     public void setCourseName(String courseName) {
         this.courseName = courseName;
+    }
+    @Override
+    public String toString() {
+        return "Course: " + getCourseName();
     }
 }
 

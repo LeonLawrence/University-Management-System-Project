@@ -1,10 +1,16 @@
 package school.management.system;
 
+import school.management.system.command.AddStudentCommand;
+import school.management.system.command.UserCommandHandler;
+import school.management.system.model.Student;
+import school.management.system.view.StudentView;
+
 import java.util.Scanner;
 
 public class UserInput {
     private ManagementSystem managementSystem = new ManagementSystem();
     private Scanner scan = new Scanner(System.in);
+    private UserCommandHandler userCommandHandler = new UserCommandHandler(managementSystem);
 
     public void userInput() {
 
@@ -17,13 +23,20 @@ public class UserInput {
         System.out.println("Please Enter Student School");
         String school = scan.next();
 
-        Student student = managementSystem.addStudent(name, year, school);
-        System.out.println(student);
+        AddStudentCommand addStudentCommand = new AddStudentCommand(name, year, school);
 
-        System.out.println("Enter Payment Amount");
-        student.payFees(scan.nextInt());
+        StudentView studentView = userCommandHandler.handle(addStudentCommand);
+        studentView.displayStudentDetails();
 
-        System.out.println(student);
+//        System.out.println("Please Enter Course");
+//        String courseName = scan.next();
+//        Course course = managementSystem.getCourse(courseName);
+//        System.out.println(course);
+//
+//        System.out.println("Enter Payment Amount");
+//        student.payFees(scan.nextInt());
+//
+//        System.out.println(course);
 
     }
 }

@@ -1,5 +1,8 @@
 package school.management.system;
 
+import school.management.system.model.Student;
+import school.management.system.model.Teacher;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,11 +10,13 @@ public class School {
 
     private List<Teacher> teachers;
     private List<Student> students;
+    private List<Course> courses;
     private static int totalMoneyEarned = 0;
     private static int totalMoneySpent = 0;
 
     public School() {
         this.teachers = new ArrayList<>();
+        this.students = new ArrayList<>();
         this.students = new ArrayList<>();
     }
 
@@ -30,6 +35,15 @@ public class School {
     public void addStudent(Student student) {
         students.add(student);
     }
+
+    public List<Course> getCourses() {
+        return courses;
+    }
+
+    public void addCourses(Course course) {
+        courses.add(course);
+    }
+
 
     public static int getTotalMoneyEarned() {
         return totalMoneyEarned;

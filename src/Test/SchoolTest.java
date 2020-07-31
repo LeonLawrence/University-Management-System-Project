@@ -3,11 +3,8 @@ package Test;
 import org.junit.Before;
 import org.junit.Test;
 import school.management.system.School;
-import school.management.system.Student;
-import school.management.system.Teacher;
-
-import java.util.ArrayList;
-import java.util.List;
+import school.management.system.model.Student;
+import school.management.system.model.Teacher;
 
 import static org.junit.Assert.assertEquals;
 

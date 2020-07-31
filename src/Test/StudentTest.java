@@ -1,7 +1,7 @@
 package Test;
 
 import org.junit.Test;
-import school.management.system.Student;
+import school.management.system.model.Student;
 
 import static org.junit.Assert.assertEquals;
 

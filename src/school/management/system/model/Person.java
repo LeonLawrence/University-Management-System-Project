@@ -1,4 +1,6 @@
-package school.management.system;
+package school.management.system.model;
+
+import school.management.system.IdGenerator;
 
 public class Person {
     private int id;

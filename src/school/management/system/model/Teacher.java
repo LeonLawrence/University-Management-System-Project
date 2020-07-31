@@ -1,4 +1,7 @@
-package school.management.system;
+package school.management.system.model;
+
+import school.management.system.School;
+import school.management.system.model.Person;
 
 public class Teacher extends Person {
 

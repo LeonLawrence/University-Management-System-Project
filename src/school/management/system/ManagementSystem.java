@@ -1,11 +1,14 @@
 package school.management.system;
 
+import school.management.system.model.Student;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class ManagementSystem {
 
     List<Student> students = new ArrayList<>();
+    List<Course> courses = new ArrayList<>();
 
     public Student addStudent(String name, int year, String school) {
 
@@ -19,5 +22,14 @@ public class ManagementSystem {
     }
 
 
+    public Course getCourse(String courseName) {
+
+        Course c = new Course(courseName);
+        courses.add(c);
+        return c;
+    }
 }
+
+
+
 
