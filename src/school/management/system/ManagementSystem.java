@@ -19,5 +19,18 @@ public class ManagementSystem {
     }
 
 
+<<<<<<< Updated upstream
+=======
+    public Course getCourse(String courseName) {
+
+        Course c = new Course(courseName);
+        courses.add(c);
+        return c;
+    }
+
+    public boolean students() {
+        return students();
+    }
+>>>>>>> Stashed changes
 }
 

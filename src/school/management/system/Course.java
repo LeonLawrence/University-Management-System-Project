@@ -16,5 +16,13 @@ public class Course {
     public void setCourseName(String courseName) {
         this.courseName = courseName;
     }
+<<<<<<< Updated upstream
+=======
+
+    @Override
+    public String toString() {
+        return "Course: " + getCourseName();
+    }
+>>>>>>> Stashed changes
 }
 
