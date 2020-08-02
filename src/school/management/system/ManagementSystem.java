@@ -10,7 +10,7 @@ public class ManagementSystem {
     List<Student> students = new ArrayList<>();
     List<Course> courses = new ArrayList<>();
 
-    public Student addStudent(String name, int year, String school) {
+    public Student addStudent(String name, String year, String school) {
 
         Student s = new Student(name, year, school);
         students.add(s);

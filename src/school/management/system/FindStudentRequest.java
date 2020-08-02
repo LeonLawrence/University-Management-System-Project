@@ -4,17 +4,21 @@ import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class FindStudentRequest {
+    private boolean flag;
     private Scanner scan = new Scanner(System.in);
 
-    private ManagementSystem managementSystem = new ManagementSystem();
-
     public void execute() {
-        try {
-            System.out.println("Please Enter Student ID");
-            int id = scan.nextInt();
-            System.out.println("Searching student id: " + id);
-        } catch (Exception E) {
-            System.out.println("Invalid Input, Restart and Try Again");
-        }
+
+        System.out.println("Enter Student ID");
+        do {
+            String pattern = "\\d{0,9}";
+            String userInput = scan.next();
+            flag = userInput.matches(pattern);
+            if (!flag) System.out.println("Invalid Input, Enter Student ID Again");
+        } while (!flag);
+        System.out.println("===============================================");
+        System.out.println("Process Successful");
+        System.out.println("===============================================");
     }
 }
+

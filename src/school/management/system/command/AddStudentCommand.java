@@ -2,10 +2,10 @@ package school.management.system.command;
 
 public class AddStudentCommand {
     private String name;
-    private int year;
+    private String year;
     private String school;
 
-    public AddStudentCommand(String name, int year, String school) {
+    public AddStudentCommand(String name, String year, String school) {
         this.name = name;
         this.year = year;
         this.school = school;
@@ -15,7 +15,7 @@ public class AddStudentCommand {
         return name;
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 

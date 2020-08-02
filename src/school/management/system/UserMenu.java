@@ -16,24 +16,22 @@ public class UserMenu {
                 "\nEnter 1: add student" +
                 "\nEnter 2: pay fee" +
                 "\nEnter 3: register course");
-            int inputNumber = scanner.nextInt();
-        try{
-        } catch(Exception E) {
-            System.out.println("invalid input");
-        }
-            if (scanner.equals("1")) {
+            String scan = scanner.next();
+
+            if (scan.equals("1")) {
                 System.out.println("1 Selected");
                 addStudent.execute();
-            } else if (scanner.equals("2")) {
+            } else if (scan.equals("2")) {
                 System.out.println("2 Selected");
                 id.execute();
                 studentPayFee.execute();
-            } else if (scanner.equals("3")) {
+            } else if (scan.equals("3")) {
                 System.out.println("3 Selected");
                 courseView.execute();
             } else {
+                System.out.println("===============================================");
                 System.out.println("Invalid Input, Please Try Again.");
-
+                System.out.println("===============================================");
             }
         }
     }

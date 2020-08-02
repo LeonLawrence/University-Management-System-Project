@@ -18,7 +18,7 @@ public class UserInput {
         String name = scan.next();
 
         System.out.println("Please Enter Student Age");
-        int year = scan.nextInt();
+        String year = scan.next();
 
         System.out.println("Please Enter Student School");
         String school = scan.next();

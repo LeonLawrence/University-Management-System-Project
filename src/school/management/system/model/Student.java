@@ -4,12 +4,12 @@ import school.management.system.School;
 
 public class Student extends Person {
 
-    private int year;
+    private String year;
     private String school;
     private int feesPaid;
     private int feesTotal;
 
-    public Student(String name, int year, String school) {
+    public Student(String name, String year, String school) {
         super(name);
         this.year = year;
         this.school = school;
@@ -17,7 +17,7 @@ public class Student extends Person {
         this.feesTotal = 30000;
     }
 
-    public void setYear(int year) {
+    public void setYear(String year) {
         this.year = year;
     }
 
@@ -28,7 +28,7 @@ public class Student extends Person {
         }
     }
 
-    public int getYear() {
+    public String getYear() {
         return year;
     }
 

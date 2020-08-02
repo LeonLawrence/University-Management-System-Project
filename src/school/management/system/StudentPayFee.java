@@ -3,15 +3,19 @@ package school.management.system;
 import java.util.Scanner;
 
 public class StudentPayFee {
+    private boolean flag;
     private Scanner scan = new Scanner(System.in);
 
     public void execute() {
-        try {
-            System.out.println("Enter Amount to Pay Course Fee");
-            int amount = scan.nextInt();
-            System.out.println("Amount Paid: " + amount);
-        } catch (Exception E) {
-            System.out.println("Amount Invalid, Restart and Try Again");
-        }
+        System.out.println("Enter Amount to Pay Course Fee");
+        do {
+            String pattern = "\\d{0,9}";
+            String userInput = scan.next();
+            flag = userInput.matches(pattern);
+            if (!flag) System.out.println("Invalid Input, Enter Amount Again");
+        } while (!flag);
+        System.out.println("===============================================");
+        System.out.println("You Have Paid");
+        System.out.println("===============================================");
     }
 }

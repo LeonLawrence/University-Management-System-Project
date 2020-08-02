@@ -44,9 +44,9 @@ public class SchoolTest {
         School school = new School();
         assertEquals(0, school.getStudents().size());
         assertEquals(0, school.getTeachers().size());
-        school.addStudent(new Student("Binh", 100_000, "work"));
+        school.addStudent(new Student("Binh", "100_000", "work"));
         assertEquals(1, school.getStudents().size());
-        school.addTeacher(new Teacher("Binh2", 100_000, "work"));
+        school.addTeacher(new Teacher("Binh2", 100000, "work"));
         assertEquals(1, school.getTeachers().size());
     }
 

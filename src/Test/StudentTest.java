@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 
 public class StudentTest {
 
-    private Student me = new Student("Binh", 2020, "some-school");
+    private Student me = new Student("Binh", "2020", "some-school");
 
     @Test
     public void canGetStudentId() {
@@ -21,7 +21,7 @@ public class StudentTest {
 
     @Test
     public void canGetYear() {
-        assertEquals(2020, me.getYear());
+        assertEquals("2020", me.getYear());
     }
 
 
@@ -40,14 +40,14 @@ public class StudentTest {
 
     @Test
     public void canGetCurrentYear() {
-        assertEquals(2020, me.getYear());
-        me.setYear(2021);
-        assertEquals(2021, me.getYear());
+        assertEquals("2020", me.getYear());
+        me.setYear("2021");
+        assertEquals("2021", me.getYear());
     }
 
     @Test
     public void payNegativeFee() {
-        Student me = new Student("Binh", 2020, "some-school");
+        Student me = new Student("Binh", "2020", "some-school");
         me.payFees(-10_000);
         assertEquals(30_000, me.getRemainingFees());
     }

@@ -10,9 +10,9 @@ public class ManagementSystemTest {
     @Test
     public void canAddStudent() {
         ManagementSystem s = new ManagementSystem();
-        Student student = s.addStudent("Leon", 2020, "UOG");
+        Student student = s.addStudent("Leon", "2020", "UOG");
         assertEquals("Leon", student.getName());
-        assertEquals(2020, student.getYear());
+        assertEquals("2020", student.getYear());
         assertEquals("UOG", student.getSchool());
     }
 
